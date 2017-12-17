@@ -1,0 +1,11 @@
+  <div class="row">
+      <div class="form-group col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-3">
+          <label for="songGroup">Select a Group</label>
+          <select class="form-control" id="songGroup">
+            <option></option>
+            <option *ngFor="let group of songGroups">{{ group.name }}</option>
+          </select>
+        </div>
+  </div>
+
+

@@ -1,0 +1,9 @@
+.songGroup {
+  display: inline-block;
+  padding: .5em;
+
+}
+
+.songGroup > span {
+  cursor: pointer;
+}
