@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-body, .form-control {
+body {
   color: #495057;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.btn, .form-control {
+  font-size: inherit;
 }
