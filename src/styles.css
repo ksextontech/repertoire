@@ -9,3 +9,7 @@ body {
 .btn, .form-control {
   font-size: inherit;
 }
+
+button:disabled {
+  cursor: not-allowed;
+}

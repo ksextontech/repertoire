@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 
 @Component({
   selector: 'app-create-song',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateSongComponent implements OnInit {
 
-  constructor() { }
+  createSongForm: FormGroup;
+  nameControl: AbstractControl;
+
+  constructor(fb: FormBuilder) {
+    this.createSongForm = fb.group({
+      'name': [null, Validators.required],
+      'artistName': [null, Validators.required]
+    });
+
+    this.nameControl = this.createSongForm.controls['name'];
+  }
 
   ngOnInit() {
   }
